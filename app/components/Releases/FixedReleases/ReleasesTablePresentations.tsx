@@ -8,6 +8,7 @@ import { FixedReleasesContext } from "@/app/providers/FixedReleasesProvider";
 import { Typography } from "../../shared/Typography";
 import { Button } from "../../shared/Button";
 import { Modal } from "../../shared/Modal";
+import { AddReleaseForm } from "../AddReleaseForm";
 
 const columns: ColumnDef<ReleaseProps>[] = [
   { accessKey: 'title', header: 'Lançamento' },
@@ -62,7 +63,7 @@ export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
         isOpen={modalStatus}
         closeModal={() => setModalStatus(false)}>
         <Modal.Content>
-          Modal {type === 'in' ? 'receitas' : 'despesas'} fixas mensais...
+          <AddReleaseForm type={type} />
         </Modal.Content>
       </Modal.Root>
     </div>

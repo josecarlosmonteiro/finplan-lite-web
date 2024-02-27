@@ -1,7 +1,7 @@
 'use client';
 
 import { ReleaseProps } from "@/app/types/Releases";
-import { ColumnDef, Table } from "../shared/Table";
+import { ColumnDef, Table } from "../../shared/Table";
 import { filterByProp } from "@/app/utils/lists";
 import { useContext } from "react";
 import { FixedReleasesContext } from "@/app/providers/FixedReleasesProvider";

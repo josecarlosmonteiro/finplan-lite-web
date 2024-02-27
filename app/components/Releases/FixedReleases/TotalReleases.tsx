@@ -1,5 +1,5 @@
 import { currency } from "@/app/utils/formats";
-import { Typography } from "../shared/Typography";
+import { Typography } from "../../shared/Typography";
 
 export function TotalReleases() {
   return (

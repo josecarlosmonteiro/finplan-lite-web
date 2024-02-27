@@ -15,13 +15,14 @@ export function Root({ title, children, isOpen, closeModal }: Props) {
       {
         isOpen &&
         <div className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-black bg-opacity-50">
-          <div className="bg-white rounded shadow-md shadow-black">
-            <div className="p-4 flex justify-between items-center">
+          <div className="min-w-fit bg-white rounded shadow-xl shadow-gray-600">
+            <div className="p-2 px-4 flex justify-between items-center gap-12">
               <Typography.Subtitle>{title}</Typography.Subtitle>
               <button className="p-2 text-gray-400" onClick={closeModal}>
                 <BsXCircle size={18} />
               </button>
             </div>
+            <hr />
             {children}
           </div>
         </div>

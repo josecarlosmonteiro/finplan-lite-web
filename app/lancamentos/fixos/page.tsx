@@ -11,14 +11,7 @@ export default async function FixedReleases() {
     <FixedReleasesProvider initialData={FIXED_RELEASES_MOCK}>
       <main className="flex justify-center">
         <div className="m-8 w-[75vw]">
-          <div className="flex justify-between items-center">
-            <Typography.Title>Lançamentos Fixos</Typography.Title>
-
-            <div className="flex gap-4">
-              <Button className="text-white bg-emerald-500">receitas</Button>
-              <Button className="text-white bg-red-500">despesas</Button>
-            </div>
-          </div>
+          <Typography.Title>Lançamentos Fixos</Typography.Title>
           <br />
 
           <div className="p-4 bg-gray-50 rounded">
@@ -29,25 +22,10 @@ export default async function FixedReleases() {
 
             <div className="flex flex-col gap-6">
               <section className="w-full">
-                <span className="text-emerald-600">
-                  <Typography.Subtitle>Receitas</Typography.Subtitle>
-                </span>
-                <br />
-
-                <div className="text-center">
-                  <ReleasesTablePresentations type="in" />
-                </div>
+                <ReleasesTablePresentations type="in" />
               </section>
-
               <section className="w-full">
-                <span className="text-red-600">
-                  <Typography.Subtitle>Despesas</Typography.Subtitle>
-                </span>
-                <br />
-
-                <div className="text-center">
-                  <ReleasesTablePresentations type="out" />
-                </div>
+                <ReleasesTablePresentations type="out" />
               </section>
             </div>
           </div>

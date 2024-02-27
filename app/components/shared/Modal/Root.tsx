@@ -17,8 +17,8 @@ export function Root({ title, children, isOpen, closeModal }: Props) {
         <div className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-black bg-opacity-50">
           <div className="min-w-fit bg-white rounded shadow-xl shadow-gray-600">
             <div className="p-2 px-4 flex justify-between items-center gap-12">
-              <Typography.Subtitle>{title}</Typography.Subtitle>
-              <button className="p-2 text-gray-400" onClick={closeModal}>
+              <Typography.Subtitle className="text-blue-500">{title}</Typography.Subtitle>
+              <button className="p-2 pr-0 text-gray-400" onClick={closeModal}>
                 <BsXCircle size={18} />
               </button>
             </div>

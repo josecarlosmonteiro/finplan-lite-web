@@ -1,5 +1,7 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
-export function Title({ children }: { children: ReactNode }) {
-  return <h1 className="text-3xl">{children}</h1>
+interface Props extends HTMLAttributes<HTMLHeadingElement> { }
+
+export function Title({ className, ...rest }: Props) {
+  return <h1 className={`text-3xl ${className}`} {...rest} />
 }

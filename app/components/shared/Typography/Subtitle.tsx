@@ -1,5 +1,7 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
-export function Subtitle({ children }: { children: ReactNode }) {
-  return <h2 className="text-xl">{children}</h2>
+interface Props extends HTMLAttributes<HTMLHeadingElement> { }
+
+export function Subtitle({ className, ...rest }: Props) {
+  return <h2 className={`text-xl ${className}`} {...rest} />
 }

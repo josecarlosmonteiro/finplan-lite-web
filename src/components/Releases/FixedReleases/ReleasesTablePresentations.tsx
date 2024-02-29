@@ -2,14 +2,17 @@
 
 import { useContext, useState } from "react";
 
-import { ReleaseProps } from "@/app/types/Releases";
 import { ColumnDef, Table } from "../../shared/Table";
-import { filterByProp } from "@/app/utils/lists";
-import { FixedReleasesContext } from "@/app/providers/FixedReleasesProvider";
 import { Typography } from "../../shared/Typography";
 import { Button } from "../../shared/Button";
 import { Modal } from "../../shared/Modal";
 import { AddReleaseForm } from "../AddReleaseForm";
+import { ReleaseProps } from "@/src/types/Releases";
+import { FixedReleasesContext } from "@/src/providers/FixedReleasesProvider";
+import { filterByProp } from "@/src/utils/lists";
+import { fixedReleaseService } from "@/src/services/fixedReleases";
+import { ReleaseVisualBalance } from "../ReleaseVisualBalance";
+import { useRelease } from "@/src/hooks/useRelease";
 
 const columns: ColumnDef<ReleaseProps>[] = [
   { accessKey: 'title', header: 'Lançamento' },
@@ -18,7 +21,8 @@ const columns: ColumnDef<ReleaseProps>[] = [
 ];
 
 export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
-  const { releases } = useContext(FixedReleasesContext);
+  const { releases, addItem } = useContext(FixedReleasesContext);
+  const { totalRevenues, totalExpenses } = useRelease(releases);
 
   const [modalStatus, setModalStatus] = useState<boolean>(false);
 
@@ -64,7 +68,13 @@ export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
         isOpen={modalStatus}
         closeModal={() => setModalStatus(false)}>
         <Modal.Content>
-          <AddReleaseForm type={type} />
+          <div className="flex flex-col gap-6">
+            <ReleaseVisualBalance revenues={totalRevenues} expenses={totalExpenses} />
+            <AddReleaseForm
+              type={type}
+              submitFn={addItem}
+            />
+          </div>
         </Modal.Content>
       </Modal.Root>
     </div>

@@ -1,5 +1,5 @@
 export type ReleaseProps = {
-  id: string | number;
+  id: string;
   title: string;
   value: number;
   type: "in" | "out";

@@ -1,19 +1,21 @@
 'use client';
 
-import { ReleaseProps } from "@/app/types/Releases";
 import { useForm } from "react-hook-form";
+
 import { Input } from "../shared/Forms/Input";
 import { Button } from "../shared/Button";
 import { Select } from "../shared/Forms/Select";
-import { EXPENSES_CATEGORIES, REVENUES_CATEGORIES } from "@/app/constants/CATEGORIES";
-import { FORM_MESSAGES } from "@/app/constants/MESSAGES";
+import { ReleaseProps } from "@/src/types/Releases";
+import { EXPENSES_CATEGORIES, REVENUES_CATEGORIES } from "@/src/constants/CATEGORIES";
+import { FORM_MESSAGES } from "@/src/constants/MESSAGES";
 
 type Props = {
   type: 'in' | 'out';
+  submitFn: (data: Omit<ReleaseProps, 'id'>) => void;
 }
 
-export function AddReleaseForm({ type }: Props) {
-  const { control, handleSubmit, formState: { errors } } = useForm<Omit<ReleaseProps, 'id'>>();
+export function AddReleaseForm({ type, submitFn }: Props) {
+  const { control, handleSubmit, formState: { errors }, setValue, setFocus } = useForm<Omit<ReleaseProps, 'id'>>();
 
   const getColorByType = (type: "in" | "out") => {
     if (type === 'in') return "emerald-500";
@@ -24,8 +26,23 @@ export function AddReleaseForm({ type }: Props) {
 
   const categories = type === 'in' ? REVENUES_CATEGORIES : EXPENSES_CATEGORIES;
 
+  const validateSubmit = (data: Omit<ReleaseProps, 'id'>) => {
+    const payload = {
+      ...data,
+      value: Number(data.value),
+      type,
+    }
+
+    submitFn(payload);
+
+    setValue('value', 0);
+    setValue('title', '');
+    setFocus('title');
+    
+  }
+
   return (
-    <form onSubmit={handleSubmit(data => console.log(data))}>
+    <form onSubmit={handleSubmit(validateSubmit)}>
       <Select
         control={control}
         name="category"

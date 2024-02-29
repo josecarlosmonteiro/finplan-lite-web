@@ -10,6 +10,7 @@ export const EXPENSES_CATEGORIES: string[] = [
   "alimentação",
   "mercado",
   "lazer",
+  "assinatura",
   "saúde",
   "farmácia",
   "pets",

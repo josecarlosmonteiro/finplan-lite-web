@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "database": "json-server ./app/database/db.json --port 7001",
-    "fulldev": "concurrently \"yarn database\" \"yarn dev\""
+    "database": "json-server ./src/database/db.json --port 7001"
   },
   "dependencies": {
     "axios": "^1.6.7",

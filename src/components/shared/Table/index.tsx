@@ -10,14 +10,14 @@ interface Props<T> {
 
 export function Table<T>({ columns, data }: Props<T>) {
   return (
-    <table className="w-full" border={1}>
-      <thead className="bg-white">
+    <table className="w-full">
+      <thead className="bg-gray-300">
         <tr>
           {
             columns.map(({ header }, index) => (
               <th
                 key={`col_${index}`}
-                className="p-2">
+                className="p-1">
                 {header}
               </th>
             ))

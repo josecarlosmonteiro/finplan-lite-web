@@ -1,6 +1,7 @@
 'use client';
 
 import { useContext, useState } from "react";
+import { BsXCircleFill } from 'react-icons/bs';
 
 import { ColumnDef, Table } from "../../shared/Table";
 import { Typography } from "../../shared/Typography";
@@ -10,18 +11,12 @@ import { AddReleaseForm } from "../AddReleaseForm";
 import { ReleaseProps } from "@/src/types/Releases";
 import { FixedReleasesContext } from "@/src/providers/FixedReleasesProvider";
 import { filterByProp } from "@/src/utils/lists";
-import { fixedReleaseService } from "@/src/services/fixedReleases";
 import { ReleaseVisualBalance } from "../ReleaseVisualBalance";
 import { useRelease } from "@/src/hooks/useRelease";
-
-const columns: ColumnDef<ReleaseProps>[] = [
-  { accessKey: 'title', header: 'Lançamento' },
-  { accessKey: 'category', header: 'Categoria' },
-  { accessKey: 'value', header: 'Valor (R$)' },
-];
+import { currency } from "@/src/utils/formats";
 
 export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
-  const { releases, addItem } = useContext(FixedReleasesContext);
+  const { releases, addItem, removeItem } = useContext(FixedReleasesContext);
   const { totalRevenues, totalExpenses } = useRelease(releases);
 
   const [modalStatus, setModalStatus] = useState<boolean>(false);
@@ -44,6 +39,21 @@ export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
   }
 
   const { title, bgColor } = dataByType();
+
+  const columns: ColumnDef<ReleaseProps>[] = [
+    { accessKey: 'title', header: 'Lançamento' },
+    { accessKey: 'category', header: 'Categoria' },
+    { accessKey: 'value', header: 'Valor (R$)', formatFn: currency, cellStyle: type === 'in' ? 'text-emerald-500' : 'text-red-500' },
+    {
+      accessKey: 'id', header: '', cell: info => (
+        <Button
+          className="text-gray-400"
+          onClick={() => removeItem(info.id)}>
+          <BsXCircleFill />
+        </Button>
+      )
+    },
+  ];
 
   return (
     <div>

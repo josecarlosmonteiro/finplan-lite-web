@@ -1,6 +1,11 @@
+import { ReactNode } from "react";
+
 export interface ColumnDef<T> {
   accessKey: keyof T;
   header?: string;
+  formatFn?: (data: any) => string | number;
+  cell?: (info: T) => ReactNode;
+  cellStyle?: string;
 }
 
 interface Props<T> {
@@ -32,8 +37,17 @@ export function Table<T>({ columns, data }: Props<T>) {
                 columns.map((col, indexCol) => (
                   <td
                     key={`data_${indexRow}_${indexCol}`}
-                    className="p-1 border-b">
-                    {row[col.accessKey] as string}
+                    className={`p-1 border-b ${col.cellStyle}`}>
+                    {
+                      col.cell
+                        ? col.cell(row)
+                        : <>
+                          {col.formatFn
+                            ? col.formatFn(row[col.accessKey])
+                            : row[col.accessKey]
+                          }
+                        </>
+                    }
                   </td>
                 ))
               }

@@ -2,6 +2,7 @@ import { ReleasesTablePresentations } from "@/src/components/Releases/FixedRelea
 import { TotalReleases } from "@/src/components/Releases/FixedReleases/TotalReleases";
 import { Typography } from "@/src/components/shared/Typography";
 import { FixedReleasesProvider } from "@/src/providers/FixedReleasesProvider";
+import Link from "next/link";
 
 const fetchInitialData = async () => {
   try {
@@ -28,7 +29,8 @@ export default async function FixedReleases() {
       <main className="flex justify-center">
         <div className="m-8 w-[75vw]">
           <Typography.Title>Lançamentos Fixos</Typography.Title>
-          <br />
+          <Link href={'/'}>Voltar ao início</Link>
+          <br /><br />
 
           <div className="p-4 bg-gray-50 rounded">
             <TotalReleases />

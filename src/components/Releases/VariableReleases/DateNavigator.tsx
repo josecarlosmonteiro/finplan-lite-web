@@ -1,10 +1,10 @@
 'use client';
 
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { BsSearch } from 'react-icons/bs';
 
 import { allMonthNames } from "@/src/utils/dates";
-import { useRouter } from "next/navigation";
 
 type DateProps = {
   month: string;
@@ -20,11 +20,13 @@ export function DateNavigator({ initialDate }: Props) {
     defaultValues: initialDate,
   });
 
+  const router = useRouter();
+
   const months = allMonthNames();
 
   const onSubmit = (data: DateProps) => {
-    const url: string = `lancamentos/variaveis/${data.month}/${data.year}`;
-    alert(url);
+    const url: string = `/lancamentos/variaveis/${data.month}/${data.year}`;
+    router.push(url);
   }
 
   return (

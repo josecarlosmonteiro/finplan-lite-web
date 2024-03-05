@@ -1,0 +1,116 @@
+{
+  "fixed-releases": [
+    {
+      "id": "c453",
+      "category": "salário",
+      "title": "adiantamento",
+      "value": 2440,
+      "type": "in"
+    },
+    {
+      "id": "f03b",
+      "category": "salário",
+      "title": "crédito de salário",
+      "value": 2240,
+      "type": "in"
+    },
+    {
+      "id": "f491",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 1000,
+      "type": "out"
+    },
+    {
+      "id": "af97",
+      "category": "moradia",
+      "title": "energia",
+      "value": 230,
+      "type": "out"
+    },
+    {
+      "id": "b36a",
+      "category": "moradia",
+      "title": "água",
+      "value": 100,
+      "type": "out"
+    },
+    {
+      "id": "9092",
+      "category": "moradia",
+      "title": "internet",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "a64b",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 34.9,
+      "type": "out"
+    },
+    {
+      "id": "65d2",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 49.9,
+      "type": "out"
+    },
+    {
+      "id": "9d86",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 14.9,
+      "type": "out"
+    },
+    {
+      "id": "6744",
+      "category": "pets",
+      "title": "ração",
+      "value": 40,
+      "type": "out"
+    },
+    {
+      "id": "0701",
+      "category": "pets",
+      "title": "areia",
+      "value": 45,
+      "type": "out"
+    },
+    {
+      "id": "ebee",
+      "category": "farmácia",
+      "title": "remédios talyta",
+      "value": 400,
+      "type": "out"
+    },
+    {
+      "id": "1c68",
+      "category": "saúde",
+      "title": "psicólogo",
+      "value": 130,
+      "type": "out"
+    },
+    {
+      "id": "364c",
+      "category": "saúde",
+      "title": "psicóloga talyta",
+      "value": 200,
+      "type": "out"
+    },
+    {
+      "id": "0c47",
+      "category": "terceiros",
+      "title": "parcela sofá - pai",
+      "value": 220,
+      "type": "out"
+    },
+    {
+      "id": "7017",
+      "category": "terceiros",
+      "title": "parcela celular - pai",
+      "value": 98,
+      "type": "out"
+    }
+  ]
+}

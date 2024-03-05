@@ -1,12 +1,10 @@
 export const fetchFixedReleases = async () => {
   try {
-    console.log("GET - fixed releases...");
     const response = await fetch("http://localhost:7001/fixed-releases", {
       cache: "no-cache",
     });
 
     const data = await response.json();
-    console.log("response - ", data);
 
     return data || [];
   } catch (error: any) {
@@ -29,9 +27,8 @@ export const fetchVariableReleases = async (month: string, year: number) => {
     );
 
     const data = await response.json();
-    console.log("response - ", data);
 
-    return data || [];
+    return data[0].releases || [];
   } catch (error: any) {
     console.log("ERROR");
     console.log(error.message);

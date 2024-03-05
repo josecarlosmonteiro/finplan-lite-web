@@ -1,7 +1,7 @@
 {
   "fixed-releases": [
     {
-      "id": "6322",
+      "id": "q6322",
       "category": "salário",
       "title": "empresa XPTO",
       "value": 2000,
@@ -85,5 +85,36 @@
       "type": "out"
     }
   ],
-  "variable-releases": []
+  "variable-releases": [
+    {
+      "month": "janeiro",
+      "year": 2024,
+      "releases": [
+        {
+          "id": "9322",
+          "category": "salário",
+          "title": "empresa XPTO",
+          "value": 2000,
+          "type": "in",
+          "releaseDate": "2024-01-05"
+        },
+        {
+          "id": "g323",
+          "category": "moradia",
+          "title": "aluguel",
+          "value": 2000,
+          "type": "out",
+          "releaseDate": "2024-01-05"
+        },
+        {
+          "id": "q6322",
+          "category": "moradia",
+          "title": "energia",
+          "value": 135,
+          "type": "out",
+          "releaseDate": "2024-01-05"
+        }
+      ]
+    }
+  ]
 }

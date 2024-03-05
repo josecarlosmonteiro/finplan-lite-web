@@ -23,24 +23,29 @@ export default async function VariableReleasesPage({ params }: { params: DatePro
 
   return (
     <VariableReleasesProvider
-      initialFixedReleases={[]}
-      initialVariableReleases={[]}
+      initialFixedReleases={fixedInitialData || []}
+      initialVariableReleases={variableInitialData || []}
     >
       <main className="flex justify-center">
-        <div className="w-[75vw] m-8 p-4 flex flex-col gap-8 bg-gray-100 rounded">
+        <div className="w-[75vw] m-8 p-4 bg-gray-100 rounded">
           <Typography.Title>Lançamentos Variáveis - {params.month}/{params.year}</Typography.Title>
-
+          <br />
           <DateNavigator initialDate={params} />
+          <br /><br />
 
-          <section>
-            <Typography.Subtitle>Receitas mensais</Typography.Subtitle>
-            <VariableReleaseTablePresentation type="in" />
-          </section>
-
-          <section>
-            <Typography.Subtitle>Despesas mensais</Typography.Subtitle>
-            <VariableReleaseTablePresentation type="out" />
-          </section>
+          <div className="flex flex-col gap-6">
+            <section>
+              <VariableReleaseTablePresentation
+                title="Receitas mensais"
+                type="in" />
+            </section>
+            
+            <section>
+              <VariableReleaseTablePresentation
+                title="Despesas mensais"
+                type="out" />
+            </section>
+          </div>
         </div>
       </main>
     </VariableReleasesProvider>

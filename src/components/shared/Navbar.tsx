@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Typography } from "./Typography";
 
 const links: { label: string; href: string }[] = [
+  { href: '/', label: 'Início' },
   { href: '/lancamentos/fixos', label: 'Lançamentos Fixos' },
 ];
 

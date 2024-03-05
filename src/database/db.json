@@ -1,4 +1,89 @@
 {
-  "fixed-releases": [],
+  "fixed-releases": [
+    {
+      "id": "6322",
+      "category": "salário",
+      "title": "empresa XPTO",
+      "value": 2000,
+      "type": "in"
+    },
+    {
+      "id": "f340",
+      "category": "renda extra",
+      "title": "loja de roupas",
+      "value": 1000,
+      "type": "in"
+    },
+    {
+      "id": "65c3",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 800,
+      "type": "out"
+    },
+    {
+      "id": "6132",
+      "category": "moradia",
+      "title": "energia",
+      "value": 100,
+      "type": "out"
+    },
+    {
+      "id": "8047",
+      "category": "moradia",
+      "title": "água",
+      "value": 80,
+      "type": "out"
+    },
+    {
+      "id": "c73d",
+      "category": "moradia",
+      "title": "internet",
+      "value": 100,
+      "type": "out"
+    },
+    {
+      "id": "be38",
+      "category": "mercado",
+      "title": "feira",
+      "value": 800,
+      "type": "out"
+    },
+    {
+      "id": "c330",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 30,
+      "type": "out"
+    },
+    {
+      "id": "ceca",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 15,
+      "type": "out"
+    },
+    {
+      "id": "6cfe",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 50,
+      "type": "out"
+    },
+    {
+      "id": "08cb",
+      "category": "saúde",
+      "title": "terapia",
+      "value": 200,
+      "type": "out"
+    },
+    {
+      "id": "b449",
+      "category": "farmácia",
+      "title": "remédios em geral",
+      "value": 120,
+      "type": "out"
+    }
+  ],
   "variable-releases": []
 }

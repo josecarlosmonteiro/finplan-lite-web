@@ -39,7 +39,7 @@ export function DateNavigator({ initialDate }: Props) {
           </select>
           <span className="text-xs text-red-500">{errors.month?.message}</span>
         </div>
-        <span>/</span>
+        <span className="text-lg">/</span>
         <div className="flex flex-col gap-1">
           <input
             type="number"

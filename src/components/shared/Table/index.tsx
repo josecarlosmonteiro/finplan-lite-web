@@ -16,7 +16,7 @@ interface Props<T> {
 export function Table<T>({ columns, data }: Props<T>) {
   return (
     <table className="w-full">
-      <thead className="bg-gray-300">
+      <thead className="bg-gray-200">
         <tr>
           {
             columns.map(({ header }, index) => (

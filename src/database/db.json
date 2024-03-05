@@ -97,6 +97,20 @@
       "title": "psicóloga talyta",
       "value": 200,
       "type": "out"
+    },
+    {
+      "id": "0c47",
+      "category": "terceiros",
+      "title": "parcela sofá - pai",
+      "value": 220,
+      "type": "out"
+    },
+    {
+      "id": "7017",
+      "category": "terceiros",
+      "title": "parcela celular - pai",
+      "value": 98,
+      "type": "out"
     }
   ]
 }

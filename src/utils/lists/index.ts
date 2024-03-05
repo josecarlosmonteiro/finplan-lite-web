@@ -16,3 +16,12 @@ export function uniquesByProp<T>(list: T[], prop: keyof T) {
 
   return values;
 }
+
+export function ascendingSort<T>(list: T[], prop: keyof T) {
+  return list.sort((a, b) => {
+    if (a[prop] > b[prop]) return 1;
+    if (a[prop] < b[prop]) return -1;
+
+    return 0;
+  });
+}

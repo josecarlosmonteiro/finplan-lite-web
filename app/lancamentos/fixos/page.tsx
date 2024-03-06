@@ -1,35 +1,19 @@
+import Link from "next/link";
+
 import { ReleasesTablePresentations } from "@/src/components/Releases/FixedReleases/ReleasesTablePresentations";
 import { TotalReleases } from "@/src/components/Releases/FixedReleases/TotalReleases";
 import { Typography } from "@/src/components/shared/Typography";
 import { FixedReleasesProvider } from "@/src/providers/FixedReleasesProvider";
-import Link from "next/link";
-
-const fetchInitialData = async () => {
-  try {
-    const response = await fetch('http://localhost:7001/fixed-releases', {
-      cache: 'no-cache',
-    });
-
-    const data = await response.json();
-
-    return data;
-  } catch (error: any) {
-    console.log("ERROR");
-    console.log(error.message);
-
-    return [];
-  }
-}
+import { fetchFixedReleases } from "@/src/services/server";
 
 export default async function FixedReleases() {
-  const response = await fetchInitialData();
+  const response = await fetchFixedReleases();
 
   return (
     <FixedReleasesProvider initialData={response || []}>
       <main className="flex justify-center">
         <div className="m-8 w-[75vw]">
           <Typography.Title>Lançamentos Fixos</Typography.Title>
-          <Link href={'/'}>Voltar ao início</Link>
           <br /><br />
 
           <div className="p-4 bg-gray-50 rounded">

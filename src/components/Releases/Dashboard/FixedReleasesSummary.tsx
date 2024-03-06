@@ -18,9 +18,8 @@ const columns: ColumnDef<CategoryProps>[] = [
     header: "Total ($)",
     cell: (info) => (
       <div
-        className={`text-center ${
-          info.type === "in" ? "text-emerald-500" : "text-red-500"
-        }`}
+        className={`text-center ${info.type === "in" ? "text-emerald-500" : "text-red-500"
+          }`}
       >
         {currency(info.total)}
       </div>
@@ -57,13 +56,13 @@ export function FixedReleasesSummary() {
         </div>
       </section>
 
-      <br />
-
       <section className="flex flex-col gap-3">
         <Typography.Subtitle>Despesas fixas por categoria</Typography.Subtitle>
-        <div className="flex gap-8 justify-center items-start">
-          <Table columns={columns} data={expensesCategories || []} />
-          <div className="w-1/2 h-[35vh]">
+        <div className="flex gap-4 justify-center items-start">
+          <div className="w-full">
+            <Table columns={columns} data={expensesCategories || []} />
+          </div>
+          <div className="w-4/5 h-[40vh]">
             <ChartComponent
               type="doughnut"
               labels={expensesCategories.map((el) => el.category)}

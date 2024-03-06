@@ -20,6 +20,7 @@ export function ChartComponent({
 
   useEffect(() => {
     const canvas = document.createElement("canvas");
+    canvas.className = "w-full h-full"
 
     new Chart(canvas, {
       type,
@@ -28,8 +29,6 @@ export function ChartComponent({
         datasets,
       },
       options: {
-        responsive: true,
-        layout: { autoPadding: false },
         plugins: {
           legend: {
             position: labelPosition || "top",
@@ -47,5 +46,10 @@ export function ChartComponent({
     return () => canvas.remove();
   }, [datasets, labelPosition, labels, type]);
 
-  return <div ref={chartRef} className="w-full h-full flex justify-center"></div>;
+  return (
+    <div
+      ref={chartRef}
+      className="w-full h-full flex justify-center"
+    />
+  )
 }

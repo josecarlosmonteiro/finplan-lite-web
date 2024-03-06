@@ -13,6 +13,7 @@ export const EXPENSES_CATEGORIES: string[] = [
   "assinatura",
   "saúde",
   "farmácia",
+  "transporte",
   "pets",
   "terceiros",
   "esporádicos",

@@ -1,7 +1,7 @@
 'use client';
 
 import { useContext, useState } from "react";
-import { BsXCircleFill } from 'react-icons/bs';
+import { BsArrowDown, BsArrowUp, BsXCircle } from 'react-icons/bs';
 
 import { ColumnDef, Table } from "../../shared/Table";
 import { Typography } from "../../shared/Typography";
@@ -47,9 +47,9 @@ export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
     {
       accessKey: 'id', header: '', cell: info => (
         <Button
-          className="text-gray-400"
+          className="text-gray-400 hover:text-red-500"
           onClick={() => removeItem(info.id)}>
-          <BsXCircleFill />
+          <BsXCircle size={20} />
         </Button>
       )
     },
@@ -59,10 +59,10 @@ export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
     <div>
       <div className="flex justify-between items-center">
         <Typography.Subtitle>{title}</Typography.Subtitle>
-        <Button
-          className={`text-white py-1 ${bgColor}`}
+        <Button className={`flex gap-2 items-center text-white ${bgColor}`}
           onClick={() => setModalStatus(true)}>
-          planejar
+          {type === 'in' ? <BsArrowUp size={20} /> : <BsArrowDown size={20} />}
+          Add {type === 'in' ? 'receita' : 'despesa'}
         </Button>
       </div>
       <br />

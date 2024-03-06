@@ -1,120 +1,193 @@
 {
   "fixed-releases": [
     {
-      "id": "q6322",
+      "id": "978c",
       "category": "salário",
-      "title": "empresa XPTO",
-      "value": 2000,
+      "title": "salario",
+      "value": 700,
       "type": "in"
     },
     {
-      "id": "f340",
+      "id": "e154",
       "category": "renda extra",
-      "title": "loja de roupas",
-      "value": 1000,
+      "title": "privacy",
+      "value": 800,
       "type": "in"
     },
     {
-      "id": "65c3",
-      "category": "moradia",
-      "title": "aluguel",
-      "value": 800,
+      "id": "f4f0",
+      "category": "farmácia",
+      "title": "metilfolato",
+      "value": 180,
       "type": "out"
     },
     {
-      "id": "6132",
-      "category": "moradia",
-      "title": "energia",
-      "value": 100,
+      "id": "10ca",
+      "category": "farmácia",
+      "title": "ritalina",
+      "value": 520,
       "type": "out"
     },
     {
-      "id": "8047",
-      "category": "moradia",
-      "title": "água",
-      "value": 80,
-      "type": "out"
-    },
-    {
-      "id": "c73d",
-      "category": "moradia",
-      "title": "internet",
-      "value": 100,
-      "type": "out"
-    },
-    {
-      "id": "be38",
-      "category": "mercado",
-      "title": "feira",
-      "value": 800,
-      "type": "out"
-    },
-    {
-      "id": "c330",
-      "category": "assinatura",
-      "title": "netflix",
+      "id": "24d8",
+      "category": "farmácia",
+      "title": "sertralina",
       "value": 30,
       "type": "out"
     },
     {
-      "id": "ceca",
-      "category": "assinatura",
-      "title": "prime",
-      "value": 15,
-      "type": "out"
-    },
-    {
-      "id": "6cfe",
-      "category": "assinatura",
-      "title": "xbox",
-      "value": 50,
-      "type": "out"
-    },
-    {
-      "id": "08cb",
-      "category": "saúde",
-      "title": "terapia",
-      "value": 200,
-      "type": "out"
-    },
-    {
-      "id": "b449",
+      "id": "8d2b",
       "category": "farmácia",
-      "title": "remédios em geral",
-      "value": 120,
+      "title": "Glifage",
+      "value": 30,
       "type": "out"
     }
   ],
   "variable-releases": [
     {
+      "id": "e154",
+      "category": "renda extra",
+      "title": "privacy",
+      "value": 800,
+      "type": "in",
       "month": "janeiro",
-      "year": 2024,
-      "releases": [
-        {
-          "id": "9322",
-          "category": "salário",
-          "title": "empresa XPTO",
-          "value": 2000,
-          "type": "in",
-          "releaseDate": "2024-01-05"
-        },
-        {
-          "id": "g323",
-          "category": "moradia",
-          "title": "aluguel",
-          "value": 2000,
-          "type": "out",
-          "releaseDate": "2024-01-05"
-        },
-        {
-          "id": "q6322",
-          "category": "moradia",
-          "title": "energia",
-          "value": 135,
-          "type": "out",
-          "releaseDate": "2024-01-05"
-        }
-      ]
+      "year": 2024
+    },
+    {
+      "id": "24d8",
+      "category": "farmácia",
+      "title": "sertralina",
+      "value": 30,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "8d2b",
+      "category": "farmácia",
+      "title": "Glifage",
+      "value": 30,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "978c",
+      "category": "salário",
+      "title": "salario",
+      "value": 700,
+      "type": "in",
+      "month": "abril",
+      "year": 2024
+    },
+    {
+      "id": "e154",
+      "category": "renda extra",
+      "title": "privacy",
+      "value": 800,
+      "type": "in",
+      "month": "abril",
+      "year": 2024
+    },
+    {
+      "id": "10ca",
+      "category": "farmácia",
+      "title": "ritalina",
+      "value": 250,
+      "type": "out",
+      "editable": false,
+      "month": "abril",
+      "year": 2024
+    },
+    {
+      "id": "f4f0",
+      "category": "farmácia",
+      "title": "metilfolato",
+      "value": 180,
+      "type": "out",
+      "month": "abril",
+      "year": 2024
+    },
+    {
+      "id": "24d8",
+      "category": "farmácia",
+      "title": "sertralina",
+      "value": 30,
+      "type": "out",
+      "month": "abril",
+      "year": 2024
+    },
+    {
+      "id": "8d2b",
+      "category": "farmácia",
+      "title": "Glifage",
+      "value": 30,
+      "type": "out",
+      "month": "abril",
+      "year": 2024
+    },
+    {
+      "id": "e154",
+      "category": "renda extra",
+      "title": "privacy",
+      "value": 800,
+      "type": "in",
+      "month": "setembro",
+      "year": 2024
+    },
+    {
+      "id": "f4f0",
+      "category": "farmácia",
+      "title": "metilfolato",
+      "value": 180,
+      "type": "out",
+      "month": "setembro",
+      "year": 2024
+    },
+    {
+      "id": "e154",
+      "category": "renda extra",
+      "title": "privacy",
+      "value": 800,
+      "type": "in",
+      "month": "mar%C3%A7o",
+      "year": 2024
+    },
+    {
+      "id": "f4f0",
+      "category": "farmácia",
+      "title": "metilfolato",
+      "value": 180,
+      "type": "out",
+      "month": "mar%C3%A7o",
+      "year": 2024
+    },
+    {
+      "id": "f4f0",
+      "category": "farmácia",
+      "title": "metilfolato",
+      "value": 180,
+      "type": "out",
+      "month": "mar%C3%A7o",
+      "year": 2024
+    },
+    {
+      "id": "978c",
+      "category": "salário",
+      "title": "salario",
+      "value": 700,
+      "type": "in",
+      "month": "mar%C3%A7o",
+      "year": 2024
+    },
+    {
+      "id": "10ca",
+      "category": "farmácia",
+      "title": "ritalina",
+      "value": 520,
+      "type": "out",
+      "month": "mar%C3%A7o",
+      "year": 2024
     }
   ]
 }

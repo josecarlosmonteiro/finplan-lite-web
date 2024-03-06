@@ -17,8 +17,6 @@ export const fetchFixedReleases = async () => {
 
 export const fetchVariableReleases = async (month: string, year: number) => {
   try {
-    console.log(`GET - variable releases - ${month}/${year}...`);
-
     const response = await fetch(
       `http://localhost:7001/variable-releases?month=${month}&year=${year}`,
       {
@@ -28,7 +26,7 @@ export const fetchVariableReleases = async (month: string, year: number) => {
 
     const data = await response.json();
 
-    return data[0].releases || [];
+    return data || [];
   } catch (error: any) {
     console.log("ERROR");
     console.log(error.message);

@@ -1,13 +1,11 @@
+import { ReleaseVisualBalance } from "@/src/components/Releases/ReleaseVisualBalance";
 import { DateNavigator } from "@/src/components/Releases/VariableReleases/DateNavigator";
+import { SummaryPresentation } from "@/src/components/Releases/VariableReleases/SummaryPresentation";
 import { VariableReleaseTablePresentation } from "@/src/components/Releases/VariableReleases/VariableReleaseTablePresentation";
 import { Typography } from "@/src/components/shared/Typography";
 import { VariableReleasesProvider } from "@/src/providers/VariableReleasesProvider";
 import { fetchFixedReleases, fetchVariableReleases } from "@/src/services/server";
-
-type DateProps = {
-  month: string;
-  year: number;
-}
+import { DateProps } from "@/src/types/Releases";
 
 const fetchInitialData = async (month: string, year: number) => {
   const data = await Promise.all([
@@ -31,21 +29,9 @@ export default async function VariableReleasesPage({ params }: { params: DatePro
           <Typography.Title>Lançamentos Variáveis - {params.month}/{params.year}</Typography.Title>
           <br />
           <DateNavigator initialDate={params} />
-          <br /><br />
+          <br />
 
-          <div className="flex flex-col gap-6">
-            <section>
-              <VariableReleaseTablePresentation
-                title="Receitas mensais"
-                type="in" />
-            </section>
-            
-            <section>
-              <VariableReleaseTablePresentation
-                title="Despesas mensais"
-                type="out" />
-            </section>
-          </div>
+          <SummaryPresentation date={params} />
         </div>
       </main>
     </VariableReleasesProvider>

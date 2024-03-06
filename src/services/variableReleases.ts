@@ -22,25 +22,33 @@ async function findByDate(baseParams: BaseParamsProps) {
   }
 }
 
-async function create(
-  month: string,
-  year: number,
-  payload: VariableReleaseProps[]
-) {
+async function create(payload: VariableReleaseProps) {
   try {
-    const { data } = await api.post(baseUrl({ month, year }), {
-      releases: payload,
-    });
+    const { data } = await api.post("/variable-releases", payload);
 
     return data;
   } catch (error: any) {
     console.log("ERROR");
     console.log(error.message);
 
-    return [];
+    return null;
+  }
+}
+
+async function remove(id: string) {
+  try {
+    const { data } = await api.delete(`/variable-releases/${id}`);
+    return data;
+  } catch (error: any) {
+    console.log("ERROR");
+    console.log(error.message);
+
+    return null;
   }
 }
 
 export const variableReleasesService = {
   findByDate,
+  create,
+  remove,
 };

@@ -1,3 +1,8 @@
+export type DateProps = {
+  month: string;
+  year: number;
+};
+
 export interface ReleaseProps {
   id: string;
   title: string;
@@ -6,12 +11,11 @@ export interface ReleaseProps {
   category: string;
 }
 
-export interface VariableReleaseProps extends ReleaseProps {
-  releaseDate: Date;
+export interface EditableReleaseProps extends ReleaseProps {
+  editable: boolean;
 }
 
-export interface VariableReleasesApiProps {
-  releases: VariableReleaseProps[];
+export interface VariableReleaseProps extends ReleaseProps {
   month: string;
   year: number;
 }

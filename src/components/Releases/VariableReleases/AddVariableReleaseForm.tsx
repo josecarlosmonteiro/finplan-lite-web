@@ -17,7 +17,7 @@ export function AddVariableReleaseForm({ type, submitFn }: Props) {
   const { control, handleSubmit, setFocus, setValue, formState: { errors } } = useForm<VariableReleaseProps>();
 
   const onSubmit = (data: VariableReleaseProps) => {
-    submitFn({ ...data, type });
+    submitFn({ ...data, type, value: Number(data.value) });
 
     setFocus('title');
     setValue('title', '');

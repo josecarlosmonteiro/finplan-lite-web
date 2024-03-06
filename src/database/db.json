@@ -2,22 +2,40 @@
   "fixed-releases": [],
   "variable-releases": [
     {
-      "id": "f1b4",
+      "id": "8433",
       "category": "rendimento",
-      "title": "dividendos",
-      "value": "15",
+      "title": "FII",
+      "value": 16,
       "type": "in",
       "month": "março",
-      "year": "2024"
+      "year": 2024
     },
     {
-      "id": "28b6",
+      "id": "6540",
+      "category": "rendimento",
+      "title": "dividendos",
+      "value": 24,
+      "type": "in",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "6e72",
       "category": "transporte",
-      "title": "uber",
-      "value": "18",
+      "title": "Uber",
+      "value": 24,
       "type": "out",
       "month": "março",
-      "year": "2024"
+      "year": 2024
+    },
+    {
+      "id": "750e",
+      "category": "transporte",
+      "title": "Uber",
+      "value": 12,
+      "type": "out",
+      "month": "março",
+      "year": 2024
     }
   ]
 }

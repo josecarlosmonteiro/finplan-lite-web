@@ -87,7 +87,7 @@ export function SummaryPresentation({ date }: Props) {
         <Modal.Content>
           <AddVariableReleaseForm
             type={"in"}
-            submitFn={data => addVariableRelease({ ...data, type: 'in', ...date })} />
+            submitFn={data => addVariableRelease({ ...data, type: 'in', ...date, year: Number(date.year) })} />
         </Modal.Content>
       </Modal.Root>
 
@@ -98,7 +98,7 @@ export function SummaryPresentation({ date }: Props) {
         <Modal.Content>
           <AddVariableReleaseForm
             type={"out"}
-            submitFn={data => addVariableRelease({ ...data, type: 'out', ...date })} />
+            submitFn={data => addVariableRelease({ ...data, type: 'out', ...date, year: Number(date.year) })} />
         </Modal.Content>
       </Modal.Root>
     </div>

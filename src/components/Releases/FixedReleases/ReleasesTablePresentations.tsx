@@ -1,7 +1,7 @@
 'use client';
 
 import { useContext, useState } from "react";
-import { BsXCircleFill } from 'react-icons/bs';
+import { BsXCircle } from 'react-icons/bs';
 
 import { ColumnDef, Table } from "../../shared/Table";
 import { Typography } from "../../shared/Typography";
@@ -47,9 +47,9 @@ export function ReleasesTablePresentations({ type }: { type: 'in' | 'out' }) {
     {
       accessKey: 'id', header: '', cell: info => (
         <Button
-          className="text-gray-400"
+          className="text-gray-400 hover:text-red-500"
           onClick={() => removeItem(info.id)}>
-          <BsXCircleFill />
+          <BsXCircle size={20} />
         </Button>
       )
     },

@@ -1,192 +1,221 @@
 {
   "fixed-releases": [
     {
-      "id": "978c",
+      "id": "a531",
       "category": "salário",
-      "title": "salario",
-      "value": 700,
+      "title": "adiantamento",
+      "value": 2000,
       "type": "in"
     },
     {
-      "id": "e154",
-      "category": "renda extra",
-      "title": "privacy",
-      "value": 800,
+      "id": "4ab5",
+      "category": "salário",
+      "title": "crédito de salário",
+      "value": 3000,
       "type": "in"
     },
     {
-      "id": "f4f0",
-      "category": "farmácia",
-      "title": "metilfolato",
-      "value": 180,
+      "id": "ada0",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 1000,
       "type": "out"
     },
     {
-      "id": "10ca",
-      "category": "farmácia",
-      "title": "ritalina",
-      "value": 520,
+      "id": "b547",
+      "category": "moradia",
+      "title": "energia",
+      "value": 200,
       "type": "out"
     },
     {
-      "id": "24d8",
-      "category": "farmácia",
-      "title": "sertralina",
-      "value": 30,
+      "id": "1882",
+      "category": "moradia",
+      "title": "água",
+      "value": 90,
       "type": "out"
     },
     {
-      "id": "8d2b",
+      "id": "327a",
+      "category": "moradia",
+      "title": "internet",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "0a61",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 35,
+      "type": "out"
+    },
+    {
+      "id": "8cb1",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 15,
+      "type": "out"
+    },
+    {
+      "id": "067c",
+      "category": "assinatura",
+      "title": "disney",
+      "value": 8,
+      "type": "out"
+    },
+    {
+      "id": "2f9b",
+      "category": "assinatura",
+      "title": "globo play",
+      "value": 25,
+      "type": "out"
+    },
+    {
+      "id": "535d",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 50,
+      "type": "out"
+    },
+    {
+      "id": "d030",
+      "category": "saúde",
+      "title": "psicólogo",
+      "value": 120,
+      "type": "out"
+    },
+    {
+      "id": "b9f9",
+      "category": "saúde",
+      "title": "academia",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "a894",
+      "category": "saúde",
+      "title": "academia - (a remover)",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "3c45",
+      "category": "pets",
+      "title": "ração",
+      "value": 90,
+      "type": "out"
+    },
+    {
+      "id": "c0d9",
+      "category": "pets",
+      "title": "areia",
+      "value": 45,
+      "type": "out"
+    },
+    {
+      "id": "1d65",
+      "category": "terceiros",
+      "title": "psicóloga - talyta",
+      "value": 200,
+      "type": "out"
+    },
+    {
+      "id": "33be",
       "category": "farmácia",
-      "title": "Glifage",
-      "value": 30,
+      "title": "tratamento talyta",
+      "value": 600,
       "type": "out"
     }
   ],
   "variable-releases": [
     {
-      "id": "e154",
-      "category": "renda extra",
-      "title": "privacy",
-      "value": 800,
-      "type": "in",
-      "month": "janeiro",
-      "year": 2024
-    },
-    {
-      "id": "24d8",
-      "category": "farmácia",
-      "title": "sertralina",
-      "value": 30,
+      "id": "b9f9",
+      "category": "saúde",
+      "title": "academia",
+      "value": 70,
       "type": "out",
-      "month": "janeiro",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "8d2b",
-      "category": "farmácia",
-      "title": "Glifage",
-      "value": 30,
-      "type": "out",
-      "month": "janeiro",
-      "year": 2024
-    },
-    {
-      "id": "978c",
+      "id": "a531",
       "category": "salário",
-      "title": "salario",
-      "value": 700,
+      "title": "adiantamento",
+      "value": 2000,
       "type": "in",
-      "month": "abril",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "e154",
-      "category": "renda extra",
-      "title": "privacy",
-      "value": 800,
-      "type": "in",
-      "month": "abril",
-      "year": 2024
-    },
-    {
-      "id": "10ca",
-      "category": "farmácia",
-      "title": "ritalina",
-      "value": 250,
+      "id": "ada0",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 1000,
       "type": "out",
-      "editable": false,
-      "month": "abril",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "f4f0",
-      "category": "farmácia",
-      "title": "metilfolato",
-      "value": 180,
+      "id": "b547",
+      "category": "moradia",
+      "title": "energia",
+      "value": 200,
       "type": "out",
-      "month": "abril",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "24d8",
-      "category": "farmácia",
-      "title": "sertralina",
-      "value": 30,
+      "id": "1882",
+      "category": "moradia",
+      "title": "água",
+      "value": 90,
       "type": "out",
-      "month": "abril",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "8d2b",
-      "category": "farmácia",
-      "title": "Glifage",
-      "value": 30,
+      "id": "327a",
+      "category": "moradia",
+      "title": "internet",
+      "value": 70,
       "type": "out",
-      "month": "abril",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "e154",
-      "category": "renda extra",
-      "title": "privacy",
-      "value": 800,
-      "type": "in",
-      "month": "setembro",
-      "year": 2024
-    },
-    {
-      "id": "f4f0",
-      "category": "farmácia",
-      "title": "metilfolato",
-      "value": 180,
+      "id": "067c",
+      "category": "assinatura",
+      "title": "disney",
+      "value": 8,
       "type": "out",
-      "month": "setembro",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "e154",
-      "category": "renda extra",
-      "title": "privacy",
-      "value": 800,
-      "type": "in",
-      "month": "mar%C3%A7o",
-      "year": 2024
-    },
-    {
-      "id": "f4f0",
-      "category": "farmácia",
-      "title": "metilfolato",
-      "value": 180,
+      "id": "535d",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 50,
       "type": "out",
-      "month": "mar%C3%A7o",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "f4f0",
-      "category": "farmácia",
-      "title": "metilfolato",
-      "value": 180,
+      "id": "2f9b",
+      "category": "assinatura",
+      "title": "globo play",
+      "value": 25,
       "type": "out",
-      "month": "mar%C3%A7o",
+      "month": "março",
       "year": 2024
     },
     {
-      "id": "978c",
-      "category": "salário",
-      "title": "salario",
-      "value": 700,
-      "type": "in",
-      "month": "mar%C3%A7o",
-      "year": 2024
-    },
-    {
-      "id": "10ca",
-      "category": "farmácia",
-      "title": "ritalina",
-      "value": 520,
+      "id": "0a61",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 35,
       "type": "out",
-      "month": "mar%C3%A7o",
+      "month": "março",
       "year": 2024
     }
   ]

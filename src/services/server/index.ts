@@ -15,6 +15,23 @@ export const fetchFixedReleases = async () => {
   }
 };
 
+export const fetchAllVariableReleases = async () => {
+  try {
+    const response = await fetch(`http://localhost:7001/variable-releases`, {
+      cache: "no-cache",
+    });
+
+    const data = await response.json();
+
+    return data || [];
+  } catch (error: any) {
+    console.log("ERROR");
+    console.log(error.message);
+
+    return [];
+  }
+};
+
 export const fetchVariableReleases = async (month: string, year: number) => {
   try {
     const response = await fetch(

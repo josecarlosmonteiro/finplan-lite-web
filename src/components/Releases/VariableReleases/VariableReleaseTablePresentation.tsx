@@ -31,7 +31,6 @@ export function VariableReleaseTablePresentation({ title, dateProps, type }: Pro
   const columns: ColumnDef<VariableReleaseProps>[] = [
     { accessKey: 'title', header: 'Lançamento' },
     { accessKey: 'category', header: 'Categoria', cellStyle: 'text-center' },
-    { accessKey: 'releaseDate', header: 'Data do lançamento', cellStyle: 'text-center', formatFn: (data: Date) => new Date(data).toLocaleDateString('pt-br') },
     { accessKey: 'value', header: 'Valor(R$)', formatFn: currency, cellStyle: `text-center ${type === 'in' ? 'text-emerald-500' : 'text-red-500'}` },
     {
       accessKey: 'id', cell: info => (

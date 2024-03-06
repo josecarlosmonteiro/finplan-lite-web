@@ -14,7 +14,6 @@ export default async function FixedReleases() {
       <main className="flex justify-center">
         <div className="m-8 w-[75vw]">
           <Typography.Title>Lançamentos Fixos</Typography.Title>
-          <Link href={'/'}>Voltar ao início</Link>
           <br /><br />
 
           <div className="p-4 bg-gray-50 rounded">

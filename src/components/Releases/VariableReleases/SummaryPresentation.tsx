@@ -34,7 +34,6 @@ export function SummaryPresentation({ date }: Props) {
   }
 
   const openedColumns: ColumnDef<EditableReleaseProps>[] = [
-    { accessKey: 'id', header: 'ID', cellStyle: 'text-center' },
     { accessKey: 'title', header: 'Lançamento' },
     { accessKey: 'category', header: 'Categoria', cellStyle: 'text-center' },
     {
@@ -92,7 +91,6 @@ export function SummaryPresentation({ date }: Props) {
   ];
 
   const variableReleasesColumns: ColumnDef<VariableReleaseProps>[] = [
-    { accessKey: 'id', header: 'ID' },
     { accessKey: 'title', header: 'Título' },
     { accessKey: 'category', header: 'Categoria', cellStyle: 'text-center' },
     {
@@ -105,7 +103,7 @@ export function SummaryPresentation({ date }: Props) {
     {
       accessKey: 'id', header: '', cell: info => (
         <div className="flex items-center justify-center gap-2">
-          <Button className="text-gray-500">
+          <Button className="text-gray-500 hover:text-red-500">
             <BsXCircle size={20} onClick={() => removeVariableRelease(info.id)} />
           </Button>
         </div>

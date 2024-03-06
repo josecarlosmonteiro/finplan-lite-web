@@ -28,26 +28,24 @@ export function AddVariableReleaseForm({ type, submitFn }: Props) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
+      <Select
+        label="Categoria"
+        control={control}
+        name="category"
+        rules={{ required: FORM_MESSAGES.required }}
+        error={errors.category?.message}
+      >
+        <option value=""></option>
+        {categories.map((opt) =>
+          <option key={opt} value={opt}>
+            {opt}
+          </option>)
+        }
+      </Select>
+
+      <br />
+
       <div className="grid grid-cols-2 gap-8">
-        <Input
-          type="date"
-          label="Data de lançamento"
-          control={control}
-          name="releaseDate"
-          rules={{ required: FORM_MESSAGES.required }}
-          error={errors.releaseDate?.message} />
-
-        <Select
-          label="Categoria"
-          control={control} name="category">
-          <option value=""></option>
-          {categories.map((opt) =>
-            <option key={opt} value={opt}>
-              {opt}
-            </option>)
-          }
-        </Select>
-
         <Input
           type="text"
           label="Título"

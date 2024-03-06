@@ -1,4 +1,23 @@
 {
   "fixed-releases": [],
-  "variable-releases": []
+  "variable-releases": [
+    {
+      "id": "f1b4",
+      "category": "rendimento",
+      "title": "dividendos",
+      "value": "15",
+      "type": "in",
+      "month": "março",
+      "year": "2024"
+    },
+    {
+      "id": "28b6",
+      "category": "transporte",
+      "title": "uber",
+      "value": "18",
+      "type": "out",
+      "month": "março",
+      "year": "2024"
+    }
+  ]
 }

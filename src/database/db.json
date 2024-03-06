@@ -1,5 +1,97 @@
 {
-  "fixed-releases": [],
+  "fixed-releases": [
+    {
+      "id": "c2aa",
+      "category": "salário",
+      "title": "desenvolvedor",
+      "value": 2600,
+      "type": "in"
+    },
+    {
+      "id": "4baa",
+      "category": "renda extra",
+      "title": "freelancer",
+      "value": 800,
+      "type": "in"
+    },
+    {
+      "id": "8184",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 550,
+      "type": "out"
+    },
+    {
+      "id": "1c08",
+      "category": "moradia",
+      "title": "energia",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "f9c7",
+      "category": "moradia",
+      "title": "água",
+      "value": 48,
+      "type": "out"
+    },
+    {
+      "id": "0c11",
+      "category": "moradia",
+      "title": "internet",
+      "value": 90,
+      "type": "out"
+    },
+    {
+      "id": "838c",
+      "category": "alimentação",
+      "title": "feira",
+      "value": 700,
+      "type": "out"
+    },
+    {
+      "id": "ae12",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 35,
+      "type": "out"
+    },
+    {
+      "id": "bfdf",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 15,
+      "type": "out"
+    },
+    {
+      "id": "a71c",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 50,
+      "type": "out"
+    },
+    {
+      "id": "ffc3",
+      "category": "saúde",
+      "title": "academia",
+      "value": 80,
+      "type": "out"
+    },
+    {
+      "id": "e676",
+      "category": "pets",
+      "title": "ração",
+      "value": 80,
+      "type": "out"
+    },
+    {
+      "id": "70f4",
+      "category": "pets",
+      "title": "areia",
+      "value": 100,
+      "type": "out"
+    }
+  ],
   "variable-releases": [
     {
       "id": "8433",
@@ -35,6 +127,449 @@
       "value": 12,
       "type": "out",
       "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "c2aa",
+      "category": "salário",
+      "title": "desenvolvedor",
+      "value": 2600,
+      "type": "in",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "8184",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 550,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "1c08",
+      "category": "moradia",
+      "title": "energia",
+      "value": 70,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "f9c7",
+      "category": "moradia",
+      "title": "água",
+      "value": 48,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "0c11",
+      "category": "moradia",
+      "title": "internet",
+      "value": 90,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "838c",
+      "category": "alimentação",
+      "title": "feira",
+      "value": 650,
+      "type": "out",
+      "editable": false,
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "bfdf",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 15,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "ae12",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 35,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "c2aa",
+      "category": "salário",
+      "title": "desenvolvedor",
+      "value": 2600,
+      "type": "in",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "4baa",
+      "category": "renda extra",
+      "title": "freelancer",
+      "value": 800,
+      "type": "in",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "8184",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 550,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "1c08",
+      "category": "moradia",
+      "title": "energia",
+      "value": 70,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "f9c7",
+      "category": "moradia",
+      "title": "água",
+      "value": 48,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "0c11",
+      "category": "moradia",
+      "title": "internet",
+      "value": 90,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "838c",
+      "category": "alimentação",
+      "title": "feira",
+      "value": 700,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "ae12",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 35,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "bfdf",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 15,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "ffc3",
+      "category": "saúde",
+      "title": "academia",
+      "value": 80,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "e676",
+      "category": "pets",
+      "title": "ração",
+      "value": 80,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "70f4",
+      "category": "pets",
+      "title": "areia",
+      "value": 100,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "a71c",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 50,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "6653",
+      "category": "alimentação",
+      "title": "almoço",
+      "value": 22,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "d3ec",
+      "category": "alimentação",
+      "title": "almoço",
+      "value": 27,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "f801",
+      "category": "alimentação",
+      "title": "almoço",
+      "value": 28,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "0a58",
+      "category": "lazer",
+      "title": "ifood",
+      "value": 44,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "094e",
+      "category": "lazer",
+      "title": "ifood",
+      "value": 42,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "23c2",
+      "category": "transporte",
+      "title": "uber",
+      "value": 22,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "68f7",
+      "category": "transporte",
+      "title": "uber",
+      "value": 30,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "fdae",
+      "category": "transporte",
+      "title": "uber",
+      "value": 12,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "4206",
+      "category": "transporte",
+      "title": "uber",
+      "value": 8,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "ecc7",
+      "category": "transporte",
+      "title": "uber",
+      "value": 7,
+      "type": "out",
+      "month": "janeiro",
+      "year": 2024
+    },
+    {
+      "id": "c2aa",
+      "category": "salário",
+      "title": "desenvolvedor",
+      "value": 2600,
+      "type": "in",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "4baa",
+      "category": "renda extra",
+      "title": "freelancer",
+      "value": 340,
+      "type": "in",
+      "editable": false,
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "8184",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 550,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "1c08",
+      "category": "moradia",
+      "title": "energia",
+      "value": 70,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "f9c7",
+      "category": "moradia",
+      "title": "água",
+      "value": 48,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "0c11",
+      "category": "moradia",
+      "title": "internet",
+      "value": 90,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "838c",
+      "category": "alimentação",
+      "title": "feira",
+      "value": 700,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "ae12",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 35,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "bfdf",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 15,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "a71c",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 50,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "ffc3",
+      "category": "saúde",
+      "title": "academia",
+      "value": 80,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "e676",
+      "category": "pets",
+      "title": "ração",
+      "value": 80,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "70f4",
+      "category": "pets",
+      "title": "areia",
+      "value": 100,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "98dd",
+      "category": "renda extra",
+      "title": "freela",
+      "value": 200,
+      "type": "in",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "c988",
+      "category": "renda extra",
+      "title": "freela",
+      "value": 180,
+      "type": "in",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "8dfc",
+      "category": "alimentação",
+      "title": "almoço",
+      "value": 28,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "83a1",
+      "category": "alimentação",
+      "title": "almoço",
+      "value": 28,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "128e",
+      "category": "saúde",
+      "title": "consulta emergência",
+      "value": 165,
+      "type": "out",
+      "month": "fevereiro",
       "year": 2024
     }
   ]

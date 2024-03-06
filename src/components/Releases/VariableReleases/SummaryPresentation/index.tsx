@@ -13,6 +13,8 @@ import { EditableVariableReleasesTable } from "./EditableVariableReleasesTable";
 import { BsArrowDown, BsArrowUp } from "react-icons/bs";
 import { Modal } from "@/src/components/shared/Modal";
 import { AddVariableReleaseForm } from "../AddVariableReleaseForm";
+import { TotalReleases } from "../../FixedReleases/TotalReleases";
+import { currency } from "@/src/utils/formats";
 
 type Props = {
   date: DateProps;
@@ -40,6 +42,16 @@ export function SummaryPresentation({ date }: Props) {
 
   return (
     <div>
+      <div className="w-full mb-4 flex gap-6">
+        <div className="w-full p-4 flex justify-between bg-gray-50 rounded shadow text-emerald-500">
+          <Typography.Subtitle>Receitas</Typography.Subtitle>
+          <Typography.Subtitle>{currency(totalRevenues)}</Typography.Subtitle>
+        </div>
+        <div className="w-full p-4 flex justify-between bg-gray-50 rounded shadow text-red-500">
+          <Typography.Subtitle>Despesas</Typography.Subtitle>
+          <Typography.Subtitle>{currency(totalExpenses)}</Typography.Subtitle>
+        </div>
+      </div>
       <ReleaseVisualBalance revenues={totalRevenues} expenses={totalExpenses} />
       <br /><br />
 

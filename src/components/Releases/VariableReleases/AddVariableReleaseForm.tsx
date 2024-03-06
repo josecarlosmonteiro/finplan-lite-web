@@ -52,7 +52,8 @@ export function AddVariableReleaseForm({ type, submitFn }: Props) {
           control={control}
           name="title"
           rules={{ required: FORM_MESSAGES.required }}
-          error={errors.title?.message} />
+          error={errors.title?.message}
+          placeholder="salário/aluguel..." />
 
         <Input
           type="number"
@@ -60,7 +61,8 @@ export function AddVariableReleaseForm({ type, submitFn }: Props) {
           control={control}
           name="value"
           rules={{ required: FORM_MESSAGES.required }}
-          error={errors.value?.message} />
+          error={errors.value?.message}
+          placeholder="R$ 1000" />
       </div>
       <br />
 

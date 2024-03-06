@@ -26,9 +26,10 @@ export default async function VariableReleasesPage({ params }: { params: DatePro
     >
       <main className="flex justify-center">
         <div className="w-[75vw] m-8 p-4 bg-gray-100 rounded">
-          <Typography.Title>Lançamentos Variáveis - {month}/{params.year}</Typography.Title>
-          <br />
-          <DateNavigator initialDate={{ ...params, month }} />
+          <div className="flex justify-between items-center">
+            <Typography.Title>Lançamentos Variáveis - {month}/{params.year}</Typography.Title>
+            <DateNavigator initialDate={{ ...params, month }} />
+          </div>
           <br />
 
           <SummaryPresentation date={{ ...params, month }} />

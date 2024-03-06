@@ -45,7 +45,6 @@ export default async function Home() {
               <FixedReleasesSummary />
             </section>
           </div>
-
         </div>
       </main>
     </DashboardProvider>

@@ -1,4 +1,304 @@
 {
-  "fixed-releases": [],
-  "variable-releases": []
+  "fixed-releases": [
+    {
+      "id": "e8ce",
+      "category": "salário",
+      "title": "adiantamento",
+      "value": 2440,
+      "type": "in"
+    },
+    {
+      "id": "0dac",
+      "category": "salário",
+      "title": "salário",
+      "value": 2220,
+      "type": "in"
+    },
+    {
+      "id": "0757",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 1000,
+      "type": "out"
+    },
+    {
+      "id": "e06e",
+      "category": "moradia",
+      "title": "energia",
+      "value": 230,
+      "type": "out"
+    },
+    {
+      "id": "44ce",
+      "category": "moradia",
+      "title": "água",
+      "value": 100,
+      "type": "out"
+    },
+    {
+      "id": "a61a",
+      "category": "moradia",
+      "title": "internet",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "d69f",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 34.9,
+      "type": "out"
+    },
+    {
+      "id": "9c39",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 14.9,
+      "type": "out"
+    },
+    {
+      "id": "16e5",
+      "category": "assinatura",
+      "title": "disney",
+      "value": 8,
+      "type": "out"
+    },
+    {
+      "id": "8189",
+      "category": "assinatura",
+      "title": "globo play",
+      "value": 24.9,
+      "type": "out"
+    },
+    {
+      "id": "b83a",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 49.9,
+      "type": "out"
+    },
+    {
+      "id": "b133",
+      "category": "saúde",
+      "title": "psicólogo",
+      "value": 120,
+      "type": "out"
+    },
+    {
+      "id": "4074",
+      "category": "saúde",
+      "title": "academia",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "f906",
+      "category": "saúde",
+      "title": "academia - a remover",
+      "value": 70,
+      "type": "out"
+    },
+    {
+      "id": "51b6",
+      "category": "terceiros",
+      "title": "parcela cell - pai",
+      "value": 98.9,
+      "type": "out"
+    },
+    {
+      "id": "720d",
+      "category": "terceiros",
+      "title": "parcela sofá - pai",
+      "value": 210.48,
+      "type": "out"
+    },
+    {
+      "id": "23be",
+      "category": "pets",
+      "title": "ração + areia",
+      "value": 190,
+      "type": "out"
+    },
+    {
+      "id": "affd",
+      "category": "terceiros",
+      "title": "psicóloga - talyta",
+      "value": 200,
+      "type": "out"
+    },
+    {
+      "id": "ed90",
+      "category": "terceiros",
+      "title": "cartão - talyta",
+      "value": 1000,
+      "type": "out"
+    }
+  ],
+  "variable-releases": [
+    {
+      "id": "8189",
+      "category": "assinatura",
+      "title": "globo play",
+      "value": 24.9,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    },
+    {
+      "id": "e8ce",
+      "category": "salário",
+      "title": "adiantamento",
+      "value": 2440,
+      "type": "in",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "0dac",
+      "category": "salário",
+      "title": "salário",
+      "value": 2220,
+      "type": "in",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "0757",
+      "category": "moradia",
+      "title": "aluguel",
+      "value": 1000,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "e06e",
+      "category": "moradia",
+      "title": "energia",
+      "value": 230,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "44ce",
+      "category": "moradia",
+      "title": "água",
+      "value": 100,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "a61a",
+      "category": "moradia",
+      "title": "internet",
+      "value": 70,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "d69f",
+      "category": "assinatura",
+      "title": "netflix",
+      "value": 34.9,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "9c39",
+      "category": "assinatura",
+      "title": "prime",
+      "value": 14.9,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "16e5",
+      "category": "assinatura",
+      "title": "disney",
+      "value": 8,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "8189",
+      "category": "assinatura",
+      "title": "globo play",
+      "value": 24.9,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "b83a",
+      "category": "assinatura",
+      "title": "xbox",
+      "value": 49.9,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "b133",
+      "category": "saúde",
+      "title": "psicólogo",
+      "value": 60,
+      "type": "out",
+      "editable": false,
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "4074",
+      "category": "saúde",
+      "title": "academia",
+      "value": 70,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "f906",
+      "category": "saúde",
+      "title": "academia - a remover",
+      "value": 70,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "affd",
+      "category": "terceiros",
+      "title": "psicóloga - talyta",
+      "value": 200,
+      "type": "out",
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "ed90",
+      "category": "terceiros",
+      "title": "cartão - talyta",
+      "value": 1187,
+      "type": "out",
+      "editable": false,
+      "month": "fevereiro",
+      "year": 2024
+    },
+    {
+      "id": "1df7",
+      "category": "transporte",
+      "title": "uber",
+      "value": 40,
+      "type": "out",
+      "month": "março",
+      "year": 2024
+    }
+  ],
+  "credit-card-releases": []
 }
